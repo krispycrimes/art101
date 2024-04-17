@@ -10,16 +10,16 @@
 
 h1 {
   color: #62929E;
-font-size: 210%;
-
-text-decoration: underline overline #B59468;
-font-family: Didot, serif;
-font-style: oblique;
+ font-size: 210%;
+ text-decoration: underline overline #B59468;
+ font-family: Didot, serif;
+ font-style: oblique;
 
 }
   
 p{ 
-  font-family: 'proxima-nova', sans-serif
-text-ident: 20px;
-margin-indent: 10px;
+ font-family: 'proxima-nova', sans-serif
+ color: #F8F1FF;
+ text-ident: 20px;
+ margin-indent: 10px;
 }
