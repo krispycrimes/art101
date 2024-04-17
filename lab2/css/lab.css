@@ -4,6 +4,11 @@
 body {
   background-color:#0B032D;
 }
+p{ 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #F8F1FF;
+  text-indent: 20px;
+ }
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
@@ -20,8 +25,3 @@ h1 {
 
 }
   
-p{ 
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- color: #F8F1FF;
- text-indent: 20px;
-}
