@@ -9,10 +9,10 @@ p{
   color: #F8F1FF;
   text-indent: 20px;
  }
- h2 { 
+h2{ 
   color: #F8F1FF;
   font-family: Didot, serif;
-  font-size: medium;
+  font-size: 200%;
   text-decoration: underline;
 }
 .minor-section {
