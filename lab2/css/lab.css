@@ -7,3 +7,18 @@
     border: solid 2px #62929E;
     background-color: #0B032D;
   }
+
+h1 {
+  color: #62929E;
+font-size: 210%;
+
+text-decoration: underline overline #B59468;
+font-family: Didot, serif;
+font-style: oblique;
+
+}
+  
+p{ font-family: 'proxima-nova', sans-serif
+text-ident: 20px;
+margin-indent: 10px;
+}
