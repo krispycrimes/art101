@@ -18,7 +18,8 @@ font-style: oblique;
 
 }
   
-p{ font-family: 'proxima-nova', sans-serif
+p{ 
+  font-family: 'proxima-nova', sans-serif
 text-ident: 20px;
 margin-indent: 10px;
 }
