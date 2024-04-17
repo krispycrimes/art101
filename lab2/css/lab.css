@@ -21,8 +21,7 @@ h1 {
 }
   
 p{ 
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  color: #F8F1FF;
- text-ident: 20px;
- margin-indent: 10px;
+ text-indent: 20px;
 }
