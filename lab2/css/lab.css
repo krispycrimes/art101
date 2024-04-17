@@ -9,6 +9,12 @@ p{
   color: #F8F1FF;
   text-indent: 20px;
  }
+ h2 { 
+  color: #F8F1FF;
+  font-family: Didot, serif;
+  font-size: medium;
+  text-decoration: underline;
+}
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
@@ -23,10 +29,4 @@ h1 {
  font-family: Didot, serif;
  font-style: oblique;
 
-}
-h2 { 
-  color: #F8F1FF;
-  font-family: Didot, serif;
-  font-size: medium;
-  text-decoration: underline;
 }
