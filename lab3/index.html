@@ -18,6 +18,19 @@
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<title>My Image Gallery</title>
+  <style>
+    .image-container {
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+    .image {
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
@@ -42,7 +55,13 @@
 			<div class="minor-section">
 					<h2>Results</h2>
 					<p> you're looking at them. here's images of them happening</p>
+					
 					<div id="output"></div>
+			</div>
+			<div class="image-container">
+  
+				<img src="img/task 1 github.png" class="image" alt="task 1 github">
+				<img src="pic2.jpg" class="image" alt="task 1 github">
 			</div>
 		</section>
 		<nav id="links">
