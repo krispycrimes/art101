@@ -10,6 +10,8 @@
   /* styles.css */
 .gallery {
   overflow: hidden;
+  display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery img {
