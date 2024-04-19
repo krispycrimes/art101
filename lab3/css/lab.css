@@ -8,6 +8,7 @@
     background-color: #DDD8C4;
   }
   /* styles.css */
+  /* Credit to wesbot below for galley code, made my own adjustments from there */
 .gallery {
   overflow: hidden;
   display: flex;
@@ -18,4 +19,6 @@
   width: 100%;
   height: auto;
   display: block;
+  padding: 10px;
+  margin-bottom: 10px;
 }
