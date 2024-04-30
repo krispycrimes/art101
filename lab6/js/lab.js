@@ -1,9 +1,9 @@
 // Lab 6 
 // Author: Kristine Gail Buriel
-// Date: 4/29/24
+// Date: 4/28/24
 
 // Define Variables
-myTransport = ["Toyota", "bus", "rides from friends", "walking"];
+myTransport = [" Toyota ", " bus ", " rides from friends ", " walking"];
 
 //create an object for my main ride 
 myMainRide = {
