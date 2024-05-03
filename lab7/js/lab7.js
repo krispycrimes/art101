@@ -25,11 +25,19 @@ function shuffleArray(array) {
     return array;
 }
 
-// Function to convert all letters except the first one to upper case 
-function convertAllLettersButFirstToUpperCase(string) {    
-   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
+// Convert first letter only to lower case    
+function convertFirstLetterToLowerCase(string) {
+    // Split the string into an array of characters
+    var chars = string.split('');
 
+    // Lowercase the first character and uppercase all other characters
+    chars[0] = chars[0].toLowerCase();
+    for (var i = 1; i < chars.length; i++) {
+        chars[i] = chars[i].toUpperCase();
+    }
+
+   return char.join('');
+}
 // sortUserName - a function that takes user input and sorts the letters of their name
 function sortUserName(userName) {
    return userName.toLowerCase().split("").sort().join("");
