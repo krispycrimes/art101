@@ -1,23 +1,15 @@
-// index.js - lab 5! cool!
+// index.js - lab 7! hard!
 // Author: kristine buriel
-// Date: 4/25/24
+// Date: 5/02/24
 
-// Define Variables 
-make = "toyota";
-model = "tacoma"; 
-color = "silver";
-year = 2019;
+//main function, this is all the dialogue 
 
-// Own true or false
-ownIt = false;
-
-
-// caluclate
-age= 2024 - year;
-
-// output 
-document.writeln("make:" + make + "<br>");
-document.writeln("model:" + model + "<br>");
-document.writeln("color" + color + "<br>");
-document.writeln("year:" + year + "<br>");
-document.writeln("age:" + age + "<br>");
+function main() {
+    var userName = window.prompt("aaAHH!. Please tell me your name so I can make a battle cry!");
+    document.writeln("<style>:root {--textlen: " + userName.length + ";}</style>");
+    var sortedName = sortUserName(userName);
+    document.writeln("AAAAAHHHHHHHH! FIGHT ON, " + sortedName + "</br></br>");
+    var randomName = randomizeName(userName);
+    document.writeln("Shouting your name now<br>AHHHHHHHHHH!");
+    document.writeln("<div class='name'>" + randomName + "</div>")
+}
