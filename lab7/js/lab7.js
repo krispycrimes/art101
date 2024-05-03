@@ -4,8 +4,10 @@
  * Lab 7: Functions
  */
 
-// Thanks to Wes for this lab code
+// Thanks to Wes for this lab code and to Wesbot for debugging n code suggestions
 // Thanks to https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+// Function for shuffling an array 
 function shuffleArray(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -24,42 +26,44 @@ function shuffleArray(array) {
 }
 
 // Function to convert all letters except the first one to upper case 
-function convertAllLettersButFirstToUpperCase(string) {
-    return string.charAt(0) + string.slice(1).toUpperCase();
+function convertAllLettersButFirstToUpperCase(string) {    
+   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
-// sortUserName - a function that takes user input and sorts the letters
-// of their name
+// sortUserName - a function that takes user input and sorts the letters of their name
 function sortUserName(userName) {
-
-    return userName.toLowerCase().split("").sort().join("");
+   return userName.toLowerCase().split("").sort().join("");
 }
 
-// sortUserName - a function that takes user input and sorts the letters
-// of their name
-function randomizeName(userName) {
-    // convert userName string to an array
-    var nameArray = userName.toLowerCase().split("");
-    console.log("nameArray =", nameArray);
-    // shuffle array with our shuffle function
-    var shuffledArray = shuffleArray(nameArray);
-    console.log("shuffledArray =", shuffledArray);
-    var shuffledString = shuffledArray.join("");
-    // shift to Title Case (like a name)
-    var newName = toTitleCase(shuffledString);
-    // return array to a string
-    return newName;
-}
+// randomizeName - a function that takes user input and randomizes the letters of their name 
+function randomizeName(userName){
+   var nameArray= userName.split('');
+   console.log("nameArray =",nameArray);
+   
+   var shuffledString="";
+   
+        for (var i=nameArray.length-1;i>0;i--)
+        {
+            var j=Math.floor(Math.random()*(i+1));
+            shuffledString+=nameArray[j];
+            [nameArray[i],nameArray[j]]=[nameArray[j],nameArray[i]];
+                
+        }
+        
+    return convertAllLettersButFirstToUpperCase(shuffledString);
 
-function main() {
-    var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
-    document.writeln("<style>:root {--textlen: " + userName.length + ";}</style>");
-    var sortedName = sortUserName(userName);
-    document.writeln("Here's your sorted name: " + sortedName + "</br></br>");
-    var randomName = randomizeName(userName);
-    document.writeln("And oh hey, I fixed your name.<br>Your new one is above.");
-    document.writeln("<div class='name'>" + randomName + "</div>")
-}
+}	
 
-// call the function
+    function main() {
+       var userName=window.prompt("Hi. Please tell me your name so I can fix it.");
+        document.writeln("<style>:root{--textlen:"+userName.length+";}</style>");
+        var sortedName=sortUserName(userName);
+        document.writeln("Here's your sorted name: "+sortedName+"</br></br>");
+     
+      	var newName=randomizeName(userName.toLowerCase());
+      	document.writeln("And oh hey, I fixed your name.<br>Your new one is above.");
+        	document.writeln("<div class='new'>"+newName+"</div>");
+        
+       
+}
 main();
