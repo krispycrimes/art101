@@ -1,10 +1,10 @@
 /*
- * Author: S Llawom Eydansele <wmodes@csumb.edu>
- * Created: 19 September
- * License: Public Domain
+ * Author: Kristine Buriel>
+ * Created: 05/01/2024
+ * Lab 7: Functions
  */
 
-// shuffleArray - take an array and shuffle the contents
+// Thanks to Wes for this lab code
 // Thanks to https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffleArray(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -23,15 +23,9 @@ function shuffleArray(array) {
     return array;
 }
 
-// given a string, return string in Title Case
-// thanks to https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
-function toTitleCase(str) {
-    return str.replace(
-        /\w\S*/g,
-        function(txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        }
-    );
+// Function to convert all letters except the first one to upper case 
+function convertAllLettersButFirstToUpperCase(string) {
+    return string.charAt(0) + string.slice(1).toUpperCase();
 }
 
 // sortUserName - a function that takes user input and sorts the letters
