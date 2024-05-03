@@ -58,7 +58,7 @@ function randomizeName(userName){
                 
         }
         
-    return convertAllLettersButFirstToUpperCase(shuffledString);
+        return shuffledString;
 
 }	
 
