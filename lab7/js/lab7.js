@@ -16,12 +16,9 @@ function sortUserName() {
 function main() {
     var userName = window.prompt("aaAHH!. Please tell me your username so I can make a battle cry!");
     document.writeln("<style>:root {--textlen: " + userName.length + ";}</style>");
-    var sortedName= 	sortUserName(userName);
+    var sortedName= 	sortUserName();
 
-    document.writeln("AAAAAHHHHFIGHT ON, " + sortedName + "</br></br>");
-    // Call randomizeName function
-    var randomName=	randomizeNames(userName);	
-    document.writeln("<div class='name'>" + randomName+ "</div>");
+    document.writeln("AAAAAHHHHFIGHT ON, " + sortedName+ "</br></br>");
 }
 function randomizeNames(name){
     var shuffledString="";
