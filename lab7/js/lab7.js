@@ -3,7 +3,7 @@
 // Date: 5/02/24
 
 //let's sort the characters from the user input 
-function sortUserName () { var userName = window.prompt("aaAHH!. Please tell me your name so I can make a battle cry!");
+function sortUserName () { var UserName = window.prompt("aaAHH!. Please tell me your name so I can make a battle cry!");
 console.log("UserName =", UserName);
 // split string to array 
 var nameArray = UserName.split('');
