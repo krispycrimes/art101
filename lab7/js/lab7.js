@@ -36,7 +36,7 @@ function convertFirstLetterToLowerCase(string) {
         chars[i] = chars[i].toUpperCase();
     }
 
-   return char.join('');
+   return chars.join('');
 }
 // sortUserName - a function that takes user input and sorts the letters of their name
 function sortUserName(userName) {
