@@ -22,7 +22,7 @@ function main() {
     document.writeln("<style>:root {--textlen: " + UserName.length + ";}</style>");
     var sortedName = sortUserName(UserName);
     document.writeln("AAAAAHHHHHHHH! FIGHT ON, " + sortedName + "</br></br>");
-    var randomName = randomizeName(userName);
+    var randomName = randomizeName(UserName);
     document.writeln("Shouting your name now<br>AHHHHHHHHHH!");
     document.writeln("<div class='name'>" + randomName + "</div>")
 }
