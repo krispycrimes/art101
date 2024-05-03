@@ -14,8 +14,6 @@ function sortUserName() {
     return nameSorted;
 }
 function main() {
-    var userName = window.prompt("aaAHH!. Please tell me your username so I can make a battle cry!");
-    document.writeln("<style>:root {--textlen: " + userName.length + ";}</style>");
     var sortedName= 	sortUserName();
 
     document.writeln("AAAAAHHHHFIGHT ON, " + sortedName+ "</br></br>");
@@ -31,4 +29,4 @@ function randomizeNames(name){
     shuffledString+=names[0];
     
     return shuffledString;
-}
+}   
