@@ -13,5 +13,10 @@
     border: dotted 50px rgb(185, 210, 216);
     color: pink;
     font-weight: bold;
-    animation: 3s ease-in 1s infinite reverse both running slidein;
-  }
+    animation: slidein 3s ease-in 1s infinite reverse both running;
+}
+
+@keyframes slidein {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
