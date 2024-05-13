@@ -13,9 +13,11 @@
   
   .special {
     background-color: lavender;
-    border: dotted 50px rgb(185, 210, 216);
+    border: dashed 3px rgb(185, 210, 216);
     color: pink;
     font-weight: bold;
+    font-style: italic;
+    font-stretch: ultra-expanded;
     animation: slidein 3s ease-in 1s infinite reverse both running;
 }
 
