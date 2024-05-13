@@ -12,8 +12,9 @@
   }
   
   .special {
-    background-color: lavender;
-    border: dashed 3px rgb(185, 210, 216);
+    background-color: #d5eef2;
+    border: outset 20px #87c3cd;
+    border-radius: 25px
     color: pink;
     font-weight: bold;
     font-style: italic;
