@@ -6,6 +6,7 @@
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
+    background-image: url(https://github.com/krispycrimes/art101/blob/563b0164d7f651249a414e2df59d9a06a3b4f0c1/lab9/img/green-square-tiled-texture-background.jpg) ;
   }
 
   .special {
@@ -118,5 +119,5 @@
       }
     }
 }
-/* sliding animation code credit to w3schools, bubble background animation credit to: https://codepen.io/alphardex/pen/jOWMGON
+/* sliding animation code credit to w3schools, bubble background animation credit to: 
 
