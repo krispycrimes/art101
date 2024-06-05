@@ -8,13 +8,11 @@ function squareIt(x){
     return x * x;
 }
 
-var myArray = [1, 2, 3, 4]
+console.log("4 squared ",squareIt(4));
+console.log("2000 squared: ",squareIt(2000));
 
-function square(x) {
-    return x * x;
-}
-console.log(square(5))
-console.log(square(2000))
+array = [1,2,3,4]
+console.log("my array: ",array);
 
 var result = array.map(squareIt);
 console.log("squared array: ", result);
@@ -22,4 +20,4 @@ console.log("squared array: ", result);
 var result = array.map(function(x){
     return x*2;
 })
-console.log("array again: ", result);
+console.log("array again: ", result); 
