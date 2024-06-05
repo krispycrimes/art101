@@ -1,9 +1,59 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+html body {
+	background-color: #FFe7c9;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+#content, #footer {
+	text-align: center;
+}
+
+#content p {
+	margin: 0 auto;
+}
+
+form {
+	margin: 0 auto;
+	width: 55%;
+	/*margin-bottom: 1em;*/
+	background-color: #ffd9aa;
+	text-align: center;
+	padding: 1em 0 .1em 0;
+	border: .1em solid gray;
+}
+
+.form-group {
+	text-align: center;
+}
+
+.col-form-label {
+	text-align: right;
+	font-size: 1.1em;
+	line-height: 1.9em;
+}
+
+span {
+	color: #FF4500;
+	font-weight: bold;
+}
+
+#theStory {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 3em;
+	text-align: left;
+}
+
+#theStory p {
+	text-indent: 3em;
+	font-size: 1.3em;
+}
+
+#theStory h1 {
+	font-family: 'Creepster', cursive;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+	form {
+		width: 85%;
+	}
+}
