@@ -11,7 +11,7 @@ $(document).ready(function() {
         var verb = $('#verb').val();
         var adjective = $('#adjective').val();
 
-        var story = `Twice upon a time, there was a ${adjective} ${noun} that loved to ${verb}.`;
+        var story = `Once upon a time, there was a ${adjective} ${noun} that loved to ${verb}.`;
 
         $('#result').text(story);
     });
