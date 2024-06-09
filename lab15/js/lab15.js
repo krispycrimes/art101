@@ -4,10 +4,11 @@
 
 const URL = "https://yesno.wtf/api";
 
-$("#activate").click(function(){
-    let question = $("#input").val();
-    console.log(question);
-    $("#the-question").html("<p>Your Question: <span class='bold'>" + question + "</span></p>")
+$("#crystalBall").click(function() {
+  let question = $("#input").val();
+  console.log(question);
+  $("#the-question").html("<p>Your Question: <span class='bold'>" + question + "</span></p>");
+
 
     $.ajax({
         url: URL,
