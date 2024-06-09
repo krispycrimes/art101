@@ -1,4 +1,6 @@
 body, #content {
+    background-image: url(https://i.imgur.com/qzDDHnM.gif);
+    background-size: 200vw 200vh;
     background-color: #001A23;
 }
 
