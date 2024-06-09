@@ -55,3 +55,9 @@ a:active {
 body {
     cursor: url('https://i.imgur.com/zfW20CV.png'), pointer;
 }
+#output {
+    text-align: center; 
+    word-wrap: break-word; 
+    margin: 0 auto; 
+    max-width: 80%; 
+}
