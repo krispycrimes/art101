@@ -39,10 +39,8 @@ button {
 
 }
 
-.someclass {
-  #element {
-    cursor: url('https://i.imgur.com/gYj09co.png'), auto;
-  }
+body {
+  cursor: url('https://i.imgur.com/gYj09co.png'), pointer;
 }
 
 button:hover {
