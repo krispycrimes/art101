@@ -1,123 +1,103 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+/* Here we can set styles for this lab page that we don't want to affect other pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-    background-image: url(https://github.com/krispycrimes/art101/blob/563b0164d7f651249a414e2df59d9a06a3b4f0c1/lab9/img/green-square-tiled-texture-background.jpg) ;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+  background-image: url(https://github.com/krispycrimes/art101/blob/563b0164d7f651249a414e2df59d9a06a3b4f0c1/lab9/img/green-square-tiled-texture-background.jpg);
+}
 
-  .special {
-    background-color: #d5eef2;
-    border: outset 20px #87c3cd;
-    border-radius: 50px;
-    font-weight: bold;
-    font-style: italic;
-    color: #6594ab;
-    font-stretch: ultra-expanded;
-    animation: slidein 3s ease-in 1s infinite reverse both running;
-        /* ... other styles credit to https://www.cssfontstack.com/La-Belle-Aurore for the font code */
-        h1 { 
-          font-family: "La Belle Aurore"; 
-          font-size: 30px; 
-          font-style: italic; 
-          font-variant: normal; 
-          font-weight: 100; 
-          line-height: 30px; 
-        }
-    }
+.special {
+  background-color: #d5eef2;
+  border: outset 20px #87c3cd;
+  border-radius: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: #6594ab;
+  font-stretch: ultra-expanded;
+  animation: slidein 3s ease-in 1s infinite reverse both running;
+  font-family: "La Belle Aurore"; 
+  font-size: 30px; 
+  font-variant: normal; 
+  font-weight: 100; 
+  line-height: 30px; 
+}
+
+h1 {
+  font-family: "La Belle Aurore"; 
+  font-size: 30px; 
+  font-style: italic; 
+  font-variant: normal; 
+  font-weight: 100; 
+  line-height: 30px; 
+}
 
 @keyframes slidein {
-    from { transform: translateX(-100%); }
-    to   { transform: translateX(0); }
-
-    body {
-      background: #f2e6f1;
-      margin: 0;
-    }
-    
-    $bubble-count: 50;
-    $sway-type: "sway-left-to-right", "sway-right-to-left";
-    
-    @function random_range($min, $max) {
-      $rand: random();
-      $random_range: $min + floor($rand * (($max - $min) + 1));
-      @return $random_range;
-    }
-    
-    @function sample($list) {
-      @return nth($list, random(length($list)));
-    }
-    
-    .bubbles {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-    
-    .bubble {
-      position: absolute;
-      left: var(--bubble-left-offset);
-      bottom: -75%;
-      display: block;
-      width: var(--bubble-radius);
-      height: var(--bubble-radius);
-      border-radius: 50%;
-      animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
-    
-      &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: hsla(183, 94%, 76%, 0.3);
-        border-radius: inherit;
-        animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
-      }
-    
-      @for $i from 0 through $bubble-count {
-        &:nth-child(#{$i}) {
-          --bubble-left-offset: #{random_range(0vw, 100vw)};
-          --bubble-radius: #{random_range(1vw, 10vw)};
-          --bubble-float-duration: #{random_range(6s, 12s)};
-          --bubble-sway-duration: #{random_range(4s, 6s)};
-          --bubble-float-delay: #{random_range(0s, 4s)};
-          --bubble-sway-delay: #{random_range(0s, 4s)};
-          --bubble-sway-type: #{sample($sway-type)};
-        }
-      }
-    }
-    
-    @keyframes float-up {
-      to {
-        transform: translateY(-175vh);
-      }
-    }
-    
-    @keyframes sway-left-to-right {
-      from {
-        transform: translateX(-100%);
-      }
-    
-      to {
-        transform: translateX(100%);
-      }
-    }
-    
-    @keyframes sway-right-to-left {
-      from {
-        transform: translateX(100%);
-      }
-    
-      to {
-        transform: translateX(-100%);
-      }
-    }
+  from { 
+      transform: translateX(-100%); 
+  }
+  to { 
+      transform: translateX(0); 
+  }
 }
-/* sliding animation code credit to w3schools, bubble background animation credit to: 
 
+body {
+  background: #f2e6f1;
+  margin: 0;
+}
+
+.bubbles {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  border-radius: 50%;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+}
+
+.bubble::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(183, 94%, 76%, 0.3);
+  border-radius: inherit;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+}
+
+@keyframes float-up {
+  to {
+      transform: translateY(-175vh);
+  }
+}
+
+@keyframes sway-left-to-right {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes sway-right-to-left {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
