@@ -6,7 +6,7 @@
 
 
 function generateRandomText() {
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const text = "LoReM IpSuM DoLoR SiT AmEt, CoNsEcTeTuR AdIpIsCiNg eLiT. sEd dO EiUsMoD TeMpOr iNcIdIdUnT Ut lAbOrE Et dOlOrE MaGnA AlIqUa. Ut eNiM Ad mInIm vEnIaM, qUiS NoStRuD ExErCiTaTiOn uLlAmCo lAbOrIs nIsI Ut aLiQuIp eX Ea cOmMoDo cOnSeQuAt.";
     const min = 3;
     const max = 100;
     const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
