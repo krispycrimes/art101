@@ -48,7 +48,7 @@ button:hover {
   color: rgb(255, 255, 255);
 }
 body {
-  background-color: #162828;
+  background-color: #080f23;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -63,7 +63,7 @@ h1 {
   margin: 10px;
   padding: 10px;
   border: solid 1px #fbf5ec;
-  background-color: #3b4178;
+  background-color: #1f244e;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
@@ -71,5 +71,5 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 4px #692f2f;
-  background-color: #5b62a4;
+  background-color: #636788;
 }
