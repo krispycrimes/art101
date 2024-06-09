@@ -23,7 +23,7 @@ body,#content {
   }
   
   p{
-    color:#8e8e8e;
+    color:#E8F1F2;
   }
   
   /* visited link */
@@ -41,3 +41,6 @@ body,#content {
   a:active {
     color:#f69669;
   } 
+  body {
+    cursor: url('https://i.imgur.com/NvtyP8I.png'), pointer;
+  }
