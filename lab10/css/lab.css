@@ -1,6 +1,16 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+/* Custom CSS for the ghost icon */
+.text {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.text img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 .text p {
   display: inline-block;
   max-width: 60%;
@@ -9,6 +19,26 @@
   border-radius: 15px;
   background-color: rgb(224, 223, 241);
   color: rgb(171, 161, 126);
-  font-family: sans-serif;
+  font-family: 'Creepster', sans-serif; /* Apply the spooky font */
   font-size: 0.8em;
+}
+
+/* Additional styling to make the h1, h2, and button elements spooooooky */
+h1, h2 {
+  font-family: 'Creepster', sans-serif;
+}
+
+button {
+  font-family: 'Creepster', sans-serif;
+  background-color: rgb(171, 161, 126);
+  color: rgb(224, 223, 241);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(224, 223, 241);
+  color: rgb(171, 161, 126);
 }
