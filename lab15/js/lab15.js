@@ -1,30 +1,26 @@
-// lab.js - Tarot Suits Assignment
-// Author: Kristine Gail Buriel
-// Date: 6/9/2024
-
-
-
-function tarotsuit(str) {
-  len = str.length; 
-  mod = len % 4; 
-
-  if (mod == 0) { 
-      return "Swords" 
+// Using the core $.ajax() method
+$.ajax({
+  // The URL for the request (from the api docs)
+  url: "https://yerkee.com/api/fortune",
+  // The data to send (will be converted to a query string)
+  data: { 
+    // here is where any data required by the api 
+    // goes (check the api docs)
+    format: "json"
+  },
+  // Whether this is a POST or GET request
+  type: "GET",
+  // The type of data we expect back
+  dataType : "json",
+  // What do we do when the api call is successful
+  // all the action goes in here
+  success: function(data) {
+    // do stuff
+    console.log(data);
+  },
+  // What we do if the api call fails
+  error: function (jqXHR, textStatus, errorThrown) { 
+    // do stuff
+    console.log("Error:", textStatus, errorThrown);
   }
-  else if (mod == 1) {
-      return "Wands" 
-  }
-  else if (mod == 2) {
-      return "Pentacles"
-  }
-  else if (mod == 3) {
-      return "Cups"
-  }
-}
-
-$("#button").click(function() { 
-  var name = $("#input").val(); 
-  var house = tarotsuit(name);
-  newText = "<p>The energy that has found you is " + house + "</p>"; 
-  $("#output").append(newText)
 })
