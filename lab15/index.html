@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 15: AJAX</title>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 15: AJAX</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specific CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- Load Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-	
-	<!-- Load jQuery library to make JavaScript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<!-- Link to JavaScript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="js/lab15.js" defer></script>
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <!-- Lab-specific CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    
+    <!-- Load jQuery library to make JavaScript easier (must be above our lab js)-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Link to JavaScript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="js/lab15.js" defer></script>
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Lab 12: JavaScript Events and Forms</h1>
-			<div class="minor-section">
-				<div id="challenges">
-					<h2>Challenge</h2>
-					<p>Working with your partner, create a function that depends on conditionals.</p>
-				</div>	
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+        <section>
+            <h1>Lab 12: JavaScript Events and Forms</h1>
+            <div class="minor-section">
+                <div id="challenges">
+                    <h2>Challenge</h2>
+                    <p>Working with your partner, create a function that depends on conditionals.</p>
+                </div>  
 
-				<div id="problems">
-					<h2>Problems</h2>
-					<p> It wasn't necessarily a problem but moreso being mindful of keeping function name consistent when I name things. The extra time I spent on that helped me avoid errors. My main issue is figuring out how to maintain the custom cursor when it activates the button. The problem falls in the css or js I figure but it's hard to identify what.</p>
-				</div>
-				
-				<div id="results">
-					<h2>Results</h2>
-					<p>Visit the suit gallery down below to see the results. Customizing the functions wasn't too difficult when one is following along with the lab tutorial. Credit to Mark J. Ferrari for the pixel art background. It's been a favorite of mine for ages.</p>
-				</div>
+                <div id="problems">
+                    <h2>Problems</h2>
+                    <p> It wasn't necessarily a problem but moreso being mindful of keeping function name consistent when I name things. The extra time I spent on that helped me avoid errors. My main issue is figuring out how to maintain the custom cursor when it activates the button. The problem falls in the css or js I figure but it's hard to identify what.</p>
+                </div>
+                
+                <div id="results">
+                    <h2>Results</h2>
+                    <p>Visit the suit gallery down below to see the results. Customizing the functions wasn't too difficult when one is following along with the lab tutorial. Credit to Mark J. Ferrari for the pixel art background. It's been a favorite of mine for ages.</p>
+                </div>
 
-			</div>
+            </div>
+        </section> <!-- Corrected closing tag -->
 
-		</div>
-		<div class="minor-section">
-			<h2>Crack open a fortune cookie</h2>
-			<button id="button">Cookie</button>
-			<p></p>
-			<div id="output"></div>
-		<div id="output" class="minor-section">
-				<h2>Your Fate Is</h2>
-				
-		</div>
+        <section>
+            <div class="minor-section">
+                <h2>Crack open a fortune cookie</h2>
+                <button id="button">Cookie</button>
+                <p></p>
+                <div id="output"></div>
+            </div>
 
-			<div class="minor-section">
-				<nav id="links">
-					<p> <a href="../index.html"> Return to where thine came, if fate allows... </a> </p>
-				</nav>
-			</div>
-		</section>
-	</main>
+            <div class="minor-section">
+                <h2>Your Fate Is</h2>
+            </div>
+
+            <div class="minor-section">
+                <nav id="links">
+                    <p> <a href="../index.html"> Return to where thine came, if fate allows... </a> </p>
+                </nav>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
