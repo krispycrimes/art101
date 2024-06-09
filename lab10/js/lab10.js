@@ -17,7 +17,7 @@ $("#make-convo").click(function(){
   const newText = generateRandomText();
   $("#output").append(`
       <div class="text">
-      <img src="imgs/boo.png">
+      <img src="https://imgur.com/gallery/ghost-KAkzhcB">
             <p>${newText}</p> 
           <p>${newText}</p>
       </div>
