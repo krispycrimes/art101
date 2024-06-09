@@ -17,8 +17,8 @@
   margin: 3px;
   padding: 7px 10px;
   border-radius: 15px;
-  background-color: rgb(224, 223, 241);
-  color: rgb(171, 161, 126);
+  background-color: #e0dff1;
+  color: rgb(115, 115, 151);
   font-family: 'Creepster', sans-serif; /* Apply the spooky font */
   font-size: 0.8em;
 }
@@ -30,11 +30,12 @@ h1, h2 {
 
 button {
   font-family: 'Creepster', sans-serif;
-  background-color: rgb(171, 161, 126);
-  color: rgb(224, 223, 241);
+  background-color: rgb(201, 203, 224);
+  color: rgb(67, 65, 85);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+
 }
 
 .someclass {
@@ -44,6 +45,32 @@ button {
 }
 
 button:hover {
-  background-color: rgb(224, 223, 241);
-  color: rgb(171, 161, 126);
+  background-color: rgb(105, 98, 234);
+  color: rgb(255, 255, 255);
+}
+body {
+  background-color: #152626;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+}
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #fbf5ec;
+  background-color: #97b1d9;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #692f2f;
+  background-color: #502b46;
 }
