@@ -6,16 +6,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
-
 #loading-screen {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -25,7 +23,7 @@ body {
 }
 
 .loading-image {
-    width: 600px; 
+    width: 600px; /* Adjust as needed */
     height: auto;
     animation: bobbing 1s ease infinite alternate; /* Bobbing animation */
 }
@@ -39,63 +37,39 @@ body {
     }
 }
 
-/* Adjust the size and positioning of the madlibs container */
 #madlibs-container {
-    padding: 20px; 
+    display: none;
+    padding: 50px 30px; 
+    padding-top: 180px;
     max-width: 90%;
-    width: 600px; 
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(115, 87, 87, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    position: relative;
     border: 10px solid transparent;
     background-image: linear-gradient(white, white), repeating-linear-gradient(
         45deg,
         #a0d8ef,
         #a0d8ef 10px,
-        #ffcccb 10px,
+        #ffcccb 10px, 
         #ffcccb 20px,
-        #ffffff 20px,
+        #ffffff 20px, 
         #ffffff 30px
     );
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
 
-/* Adjust input fields for better spacing */
 #madlibs-form input {
     margin: 5px 0;
-    width: 100%; /* Ensure input fields take up full width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
-/* Adjust the result div */
 #result {
-    margin-top: 30px;
-    padding: 20px; 
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    white-space: pre-wrap; 
 }
 
 h1 {
     font-family: 'Space Grotesk', sans-serif;
     color: #39898d;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 20px; /* Add padding for better spacing on smaller screens */
-    }
-    
-    #madlibs-container {
-        max-width: 100%; /* Adjust max-width for smaller screens */
-        width: auto; /* Allow container to take up full width on smaller screens */
-    }
-    
-    .loading-image {
-        width: 150px; /* Adjust loading image size for smaller screens */
-    }
 }
