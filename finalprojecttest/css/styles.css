@@ -39,32 +39,25 @@ body {
 
 #madlibs-container {
     display: none;
-    padding: 50px 30px;
-    padding-top: 150px;
+    padding: 50px 30px; 
+    padding-top: 180px;
     max-width: 90%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
-}
-
-#madlibs-container::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    z-index: -1; /* Place behind the container */
-    background: repeating-linear-gradient(
+    border: 10px solid transparent;
+    background-image: linear-gradient(white, white), repeating-linear-gradient(
         45deg,
-        #78b6d7,
-        #eaa594 10px,
-        #fff 10px,
-        #fff 20px
+        #a0d8ef, 
+        #a0d8ef 10px,
+        #ffcccb 10px,
+        #ffcccb 20px,
+        #ffffff 20px,
+        #ffffff 30px,
     );
-    border-radius: 10px; /* Match the border-radius of the container */
-    box-shadow: 0 0 0 10px #fff; /* White border no gradient overlap */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 #madlibs-form input {
