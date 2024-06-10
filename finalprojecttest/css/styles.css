@@ -39,6 +39,8 @@ body {
 #madlibs-container {
     display: none;
     padding: 50x;
+    padding-left: 30;
+    padding-right: 30;
     padding-top: 120px; 
     max-width: 90%; 
     background-color: #fff;
