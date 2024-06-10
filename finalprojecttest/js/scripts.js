@@ -1,8 +1,7 @@
 $(document).ready(function() {
     // Hide the loading screen and show the content
     $('#loading-screen').fadeOut(3000, function() { // Slowing down the fade out to 3 seconds, 1000 equals to 1 sec
-
-        $('#madlibs-container').fadeIn(slow);
+        $('#madlibs-container').fadeIn('slow');
     });
 
     // random word library
@@ -129,7 +128,7 @@ $(document).ready(function() {
     Dear ${personName},
     I hope this email finds you ${negativeAdjective1}. I am writing to inform you that your failure to complete ${dailyTask2} ${number} times has resulted in a series of ${adjective1} consequences.
     Firstly, this ${noun1} has caused a significant ${noun2} in the ${department}. As a result, we are now facing ${pluralNoun1} that are ${adjective2} and completely avoidable if only you had ${pastVerb} the ${dailyTask3}.
-    Additionally, your lack of ${noun3} has left everyone feeling ${negativeEmotion1}. It’s almost as if you’re intentionally trying to ${verb1} the entire ${project} with your ${adjective3} behavior. The ${pluralNoun2} have been nothing short of ${negativeAdjective2}, making it impossible for us to ${verb2} effectively.
+    Additionally, your lack of ${noun3} has left everyone feeling ${negativeEmotion1}. Its almost as if youre intentionally trying to ${verb1} the entire ${project} with your ${adjective3} behavior. The ${pluralNoun2} have been nothing short of ${negativeAdjective2}, making it impossible for us to ${verb2} effectively.
     Moreover, your constant ${verbIng} has created an environment of ${noun4} and ${noun5}. The way you ${verb3} around the office is not only ${negativeAdjective3} but also ${negativeAdjective4}, contributing to a ${adjective4} atmosphere. Your ${adjective5} attitude and refusal to ${verb4} have made it clear that you lack the ${noun6} needed for this role.
     To make matters worse, your interactions with the ${pluralNoun3} have been ${negativeAdjective5} at best. The ${noun7} you exhibit is nothing short of ${negativeAdjective6}, and it's high time you faced the ${pluralNoun4} of your actions. We are all ${negativeEmotion2} and ${negativeEmotion3} with your ${adjective6} performance.
     Therefore, I am formally requesting that you take immediate steps to ${verb5} your behavior. If you fail to ${verb6}, further ${pluralNoun5} will be necessary. This is your final warning to ${verb7} and start contributing ${adjective7}ly to the team.
@@ -141,67 +140,4 @@ $(document).ready(function() {
         // Display the story in the #result div
         $('#result').text(story);
     });
-<<<<<<< HEAD
 });
-
- <div id="container">
-const port = 3000
-
-const server = http.createServer(function(req, res){
-    const express = require('express');
-    const nodemailer = require('nodemailer');
-    const bodyParser = require('body-parser');
-    const cors = require('cors');
-    
-    const app = express();
-    const port = 3000;
-    
-    // Middleware
-    app.use(cors());
-    app.use(bodyParser.json());
-    
-    // API endpoint to send email
-    app.post('/send-email', (req, res) => {
-        const { fromEmail, toEmail, subject, message } = req.body;
-    
-        // Nodemailer transporter configuration
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'your-email@gmail.com', // Replace with your email
-                pass: 'your-email-password'   // Replace with your email password
-            }
-        });
-    
-        const mailOptions = {
-            from: fromEmail,
-            to: toEmail,
-            subject: subject,
-            text: message
-        };
-    
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return res.status(500).send(error.toString());
-            }
-            res.status(200).send('Email sent: ' + info.response);
-        });
-    });
-    
-    app.listen(port, () => {
-        console.log(`Server running on port ${port}`);
-    });
-    
-})
-
-server.listen(port, function(error){
-    if (error){
-        console.log('Something went wrong', error)
-    } else {
-        console.log('Server is listening on port'+ port)
-    }
-})
-</div>
-=======
-});
->>>>>>> parent of 749b067 (Update scripts.js)
