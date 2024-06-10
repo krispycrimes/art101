@@ -40,7 +40,7 @@ body {
 #madlibs-container {
     display: none;
     padding: 50px 30px 50px 30px; 
-    padding-top: 120px;
+    padding-top: 150px;
     max-width: 90%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ body {
     background: repeating-linear-gradient(
         45deg,
         #ebb0a3,
-        #5d91c9 10px,
+        #69a3e0 10px,
         #fff 10px,
         #fff 20px
     );
