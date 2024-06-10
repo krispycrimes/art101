@@ -22,7 +22,7 @@ body {
 }
 
 .loading-image {
-    width: 100px; /* Adjust as needed */
+    width: 500px; /* Adjust as needed */
     height: auto;
     animation: bobbing 1s ease infinite alternate; /* Bobbing animation */
 }
@@ -38,7 +38,7 @@ body {
 
 #madlibs-container {
     display: none;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
