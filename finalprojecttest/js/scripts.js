@@ -1,7 +1,8 @@
 $(document).ready(function() {
     // Hide the loading screen and show the content
-    $('#loading-screen').hide(); 
-        $('#madlibs-container').show();
+    $('#loading-screen').fadeOut(3000, function() { // Slowing down the fade out to 3 seconds, 1000 equals to 1 sec
+
+        $('#madlibs-container').fadeIn(slow);
     });
 
     // random word library
