@@ -1,9 +1,8 @@
 $(document).ready(function() {
     // Hide the loading screen and show the content
-    $('#loading-screen').fadeOut('slow', function() {
+    $('#loading-screen').fadeOut(3000, function() { // Slowing down the fade out to 3 seconds
         $('#madlibs-container').fadeIn('slow');
     });
-
     $('#madlibs-form').submit(function(event) {
         event.preventDefault();
 

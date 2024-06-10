@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Libs Email</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div id="loading-screen">
         <div class="loader"></div>
+        <img src="https://i.imgur.com/dkFWdif.png" alt="Loading..." class="loading-image">
     </div>
-    <div id="madlibs-container">
+    <div id="madlibs-container" style="display: none;">
         <h1>Mad Libs Email</h1>
         <form id="madlibs-form">
             <p>
@@ -41,15 +44,13 @@
                 Thank you for your <input type="text" id="adjective8" placeholder="adjective" required> attention to this matter.
             </p>
             <p>
-                Without remorse, <br>
-                Coldly, <br>
+                Without remorse,<br>
+                Coldly,<br>
                 <input type="text" id="yourName" placeholder="Your Name" required>
             </p>
             <button type="submit">Generate</button>
         </form>
-        <p id="result"></p>
+        <div id="result"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
