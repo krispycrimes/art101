@@ -39,9 +39,9 @@ body {
 
 #madlibs-container {
     display: none;
-    padding: 50px 30px; 
-    padding-top: 200px;
-    max-width: 90%;
+    padding: 50px 50px; 
+    padding-top: 180px;
+    max-width: 80%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
