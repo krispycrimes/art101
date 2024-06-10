@@ -23,7 +23,7 @@ body {
 }
 
 .loading-image {
-    width: 600px; /* Adjust as needed */
+    width: 600px; 
     height: auto;
     animation: bobbing 1s ease infinite alternate; /* Bobbing animation */
 }
@@ -39,9 +39,7 @@ body {
 
 #madlibs-container {
     display: none;
-    padding: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 50px 30px 50px 30px; 
     padding-top: 120px;
     max-width: 90%;
     background-color: #fff;
@@ -62,8 +60,8 @@ body {
     z-index: -1; /* Place behind the container */
     background: repeating-linear-gradient(
         45deg,
-        #67a2e0,
-        #ffcccb 10px,
+        #ebb0a3,
+        #5d91c9 10px,
         #fff 10px,
         #fff 20px
     );
@@ -78,7 +76,6 @@ body {
     margin-top: 20px;
     white-space: pre-wrap; 
 }
-
 
 h1 {
     font-family: 'Space Grotesk', sans-serif;
