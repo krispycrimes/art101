@@ -1,5 +1,6 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
+    color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -60,4 +61,5 @@ body {
 
 h1 {
     font-family: 'Space Grotesk', sans-serif;
+    color: #39898d;
 }
