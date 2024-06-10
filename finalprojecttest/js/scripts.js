@@ -8,10 +8,10 @@ $(document).ready(function() {
     function fillEmptyFields() {
         const words = {
             subjectAdjective: ["urgent", "important", "critical", "essential", "World-Ending", "Career-Destroying", "Courtesy", "Polite", "Kind", "Aggressive", "Definitely Not Passive Aggressive"],
-            dailyTask:  ["the report", "the meeting", "the presentation", "showering", "the project", "breathing", "hygiene", "work", "Workplace Behavior", "Dancing", "Eating","Crying”,”shitting”, “BDSM”, “Leg Day”, “Contemplating Life”, “Transforming into a Furry”, “Going to a Funeral”, “Having an existential crisis”, “Adopting a capybaraa"],
-            personName: ["Ross", "Rachel", "Monica", "Chandler", "Phoebe", "John", "Jim", "Pam", "Karen", "Trixie", "Katya", "Laurentius", "Walter", "Skyler", "Jesse", "Ash", "Saul", "Carrie", "Larry", "Mike", "Samm”, “Amy”, “Sabrina”, “Olivia”, Sal”, “Murr”, “Joe”, “Q”, “Meredith”, “Lexie”, “McDreamy”, “McSteamy”, “Cheater”, “My left nut”, “Twin Flame” “Blue Baller”, “Mom”, “Hot Milf”, “DILF”, “Bea"],
-            negativeAdjective1: ["terrible", "awful", "dismal", "soon", "well", "unwell", "hurtfully", "fast”, “quick”, “before I jump you”, “before I set your house on fire”, “or else I will find you myself”, “like sooooo fast girrl..."],
-            dailyTask2: ["the task", "your responsibility", "the assignment", "the quest", "feeding your kids", "paying your bills", "the mandatory compliments", "wiping your ass”, “No Nut November”, “paying for child support”, “the ritual”, “breaking up with your girlfriend”, “breaking up with your boyfriend”, “stopping flirting with my baby cousin"],
+            dailyTask: ["the report", "the meeting", "the presentation", "showering", "the project", "breathing", "hygiene", "work", "Workplace Behavior", "Dancing", "Eating", "Crying", "shitting", "BDSM", "Leg Day", "Contemplating Life", "Transforming into a Furry", "Going to a Funeral", "Having an existential crisis", "Adopting a capybaraa"],
+            personName: ["Ross", "Rachel", "Monica", "Chandler", "Phoebe", "John", "Jim", "Pam", "Karen", "Trixie", "Katya", "Laurentius", "Walter", "Skyler", "Jesse", "Ash", "Saul", "Carrie", "Larry", "Mike", "Samm", "Amy", "Sabrina", "Olivia", "Sal", "Murr", "Joe", "Q", "Meredith", "Lexie", "McDreamy", "McSteamy", "Cheater", "My left nut", "Twin Flame", "Blue Baller", "Mom", "Hot Milf", "DILF", "Bea"],
+            negativeAdjective1: ["terrible", "awful", "dismal", "soon", "well", "unwell", "hurtfully", "fast", "quick", "before I jump you", "before I set your house on fire", "or else I will find you myself", "like sooooo fast girrl..."],
+            dailyTask2: ["the task", "your responsibility", "the assignment", "the quest", "feeding your kids", "paying your bills", "the mandatory compliments", "wiping your ass", "No Nut November", "paying for child support", "the ritual", "breaking up with your girlfriend", "breaking up with your boyfriend", "stopping flirting with my baby cousin"],
             number: ["3", "5", "7", "21", "666", "70", "1781", "0", "42", "500", "526,000", "30"],
             adjective1: ["severe", "serious", "grave"],
             noun1: ["incident", "problem", "issue", "mistake", "disaster", "fumble"],
@@ -45,7 +45,7 @@ $(document).ready(function() {
             negativeAdjective6: ["inexcusable", "shameful", "disgraceful"],
             pluralNoun4: ["consequences", "outcomes", "results", "endings", "fates"],
             negativeEmotion2: ["disappointed", "upset", "angry"],
-            negativeEmotion3: ["annoyed", "frustrated", "irritated","angry", "sexually frustrated", "depressed", "hopeless"],
+            negativeEmotion3: ["annoyed", "frustrated", "irritated", "angry", "sexually frustrated", "depressed", "hopeless"],
             adjective6: ["poor", "subpar", "unsatisfactory"],
             verb5: ["improve", "change", "adjust"],
             verb6: ["do", "act", "behave"],
