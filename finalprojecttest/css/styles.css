@@ -73,4 +73,6 @@ body {
 h1 {
     font-family: 'Space Grotesk', sans-serif;
     color: #39898d;
+    text-align: justify;
+    margin-top: 20px;
 }
