@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -55,4 +55,9 @@ body {
 #result {
     margin-top: 20px;
     white-space: pre-wrap; 
+}
+
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
 }
