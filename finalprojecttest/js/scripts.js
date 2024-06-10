@@ -141,6 +141,7 @@ $(document).ready(function() {
         // Display the story in the #result div
         $('#result').text(story);
     });
+<<<<<<< HEAD
 });
 
  <div id="container">
@@ -201,3 +202,6 @@ server.listen(port, function(error){
     }
 })
 </div>
+=======
+});
+>>>>>>> parent of 749b067 (Update scripts.js)
