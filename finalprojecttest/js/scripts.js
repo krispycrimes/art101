@@ -142,8 +142,7 @@ $(document).ready(function() {
     });
 });
 
-
-const http = require('http')
+ <div id="container">
 const port = 3000
 
 const server = http.createServer(function(req, res){
@@ -200,3 +199,4 @@ server.listen(port, function(error){
         console.log('Server is listening on port'+ port)
     }
 })
+</div>
