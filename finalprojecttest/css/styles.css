@@ -28,12 +28,22 @@ body {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-    margin-bottom: 20px; 
+    margin-bottom: 20px; /* Space between the loader and the image */
 }
 
 .loading-image {
-    width: 100px; 
+    width: 100px; /* Adjust as needed */
     height: auto;
+    animation: bobbing 1s ease infinite alternate; /* Bobbing animation */
+}
+
+@keyframes bobbing {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    100% {
+        transform: translateY(-10px); /* Bobbing up */
+    }
 }
 
 @keyframes spin {
