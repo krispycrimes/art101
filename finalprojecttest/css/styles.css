@@ -42,11 +42,32 @@ body {
     padding: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 120px; 
-    max-width: 90%; 
+    padding-top: 120px;
+    max-width: 90%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: 20px solid transparent; 
+    background-clip: padding-box;
+    position: relative; 
+}
+
+#madlibs-container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: -1; /* Place behind the container */
+    background: repeating-linear-gradient(
+        45deg,
+        #67a2e0,
+        #ffcccb 10px,
+        #fff 10px,
+        #fff 20px
+    );
+    border-radius: 15px; /* Match the border-radius of the container */
 }
 
 #madlibs-form input {
