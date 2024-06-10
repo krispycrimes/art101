@@ -39,6 +39,7 @@ body {
 
 #madlibs-container {
     display: none;
+    margin-top: 20%;
     padding: 50px 50px; 
     padding-top: 180px;
     max-width: 80%;
